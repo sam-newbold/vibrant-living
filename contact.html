@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Vibrant Living Retreat &amp; Day Spa</title>
+  <meta name="description" content="Get in touch with Vibrant Living Retreat and Day Spa. Located at 88 Rippingale Road, Hanmer Springs. Enquire about accommodation, day spa treatments, or wellness retreats.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-banner__bg" style="background-image: url('images/retreat-exterior.jpg');"></div>
+      <div class="hero-banner__overlay"></div>
+      <div class="hero-banner__content">
+        <span class="overline" style="color:rgba(255,255,255,0.75);">Hanmer Springs, New Zealand</span>
+        <h1>Get in touch</h1>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- LEFT: Contact Form -->
+          <div>
+            <span class="overline">Send us a message</span>
+            <h2 style="margin-bottom: 32px;">We'd love to hear from you</h2>
+            <form class="contact-form" action="mailto:info@vibrantliving.co.nz" method="post" enctype="text/plain">
+
+              <label for="contact-name">Full name *</label>
+              <input type="text" id="contact-name" name="name" required placeholder="Your full name">
+
+              <label for="contact-email">Email address *</label>
+              <input type="email" id="contact-email" name="email" required placeholder="your@email.com">
+
+              <label for="contact-phone">Phone number</label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="+64 ...">
+
+              <label for="contact-subject">Subject</label>
+              <select id="contact-subject" name="subject">
+                <option value="" disabled selected>Select an enquiry type</option>
+                <option value="Accommodation">Accommodation</option>
+                <option value="Day Spa">Day Spa</option>
+                <option value="Retreat Enquiry">Retreat Enquiry</option>
+                <option value="Other">Other</option>
+              </select>
+
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="message" required placeholder="Tell us how we can help…"></textarea>
+
+              <button type="submit" class="btn btn--primary">Send message</button>
+            </form>
+          </div>
+
+          <!-- RIGHT: Contact Info Panel -->
+          <div>
+            <div class="contact-info">
+              <h3>Contact information</h3>
+
+              <div class="contact-info-item">
+                <span style="font-size:18px; color:var(--green); flex-shrink:0;">&#9679;</span>
+                <div>
+                  <strong style="display:block; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:4px;">Address</strong>
+                  88 Rippingale Road<br>
+                  Hanmer Springs 7334<br>
+                  New Zealand
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span style="font-size:18px; color:var(--green); flex-shrink:0;">&#9679;</span>
+                <div>
+                  <strong style="display:block; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:4px;">Phone</strong>
+                  <a href="tel:+6433157429">+64 3 315 7429</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span style="font-size:18px; color:var(--green); flex-shrink:0;">&#9679;</span>
+                <div>
+                  <strong style="display:block; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:4px;">Mobile (Adela)</strong>
+                  <a href="tel:+6420417601​51">+64 20 4176 0151</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span style="font-size:18px; color:var(--green); flex-shrink:0;">&#9679;</span>
+                <div>
+                  <strong style="display:block; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:4px;">Email</strong>
+                  <a href="mailto:info@vibrantliving.co.nz">info@vibrantliving.co.nz</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span style="font-size:18px; color:var(--green); flex-shrink:0;">&#9679;</span>
+                <div>
+                  <strong style="display:block; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:4px;">Opening hours</strong>
+                  Monday–Sunday<br>
+                  9:00am–8:00pm
+                </div>
+              </div>
+
+              <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--light-grey);">
+                <p style="font-size:13px; color:var(--warm-grey); margin-bottom:16px;">Ready to book? Head straight to our online booking portal.</p>
+                <a href="book-online.html" class="btn btn--primary">Book online</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section section--dark s-cta-banner">
+      <h2>Your escape in Hanmer Springs</h2>
+      <p>Two acres of tranquil gardens, world-class spa treatments, and warm Kiwi hospitality await. We're here to help you plan the perfect stay.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="book-online.html" class="btn btn--primary">Book online</a>
+        <a href="accommodation.html" class="btn btn--outline-light">View accommodation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/partials.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
