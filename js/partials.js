@@ -17,7 +17,7 @@
       <a href="/packages.html" class="nav__link">Packages</a>
       <a href="/specials.html" class="nav__link">Specials</a>
       <div class="nav__dropdown">
-        <a href="#" class="nav__link">More ▾</a>
+        <a href="javascript:void(0)" class="nav__link" aria-haspopup="true">More ▾</a>
         <div class="nav__dropdown-menu">
           <a href="/yoga-hanmer-springs.html">Yoga</a>
           <a href="/fat-bikes.html">Fat Bikes</a>
