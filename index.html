@@ -3,13 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vibrant Living Retreat & Day Spa — Hanmer Springs</title>
+  <title>Vibrant Living Retreat & Day Spa — Your Escape in Hanmer Springs</title>
+  <meta name="description" content="Heart-centred wellness retreat and day spa across two acres of tranquil gardens in Hanmer Springs, New Zealand. Accommodation, massages, healing, yoga and wellness retreats.">
+  <meta property="og:title" content="Vibrant Living Retreat & Day Spa">
+  <meta property="og:description" content="Your escape in Hanmer Springs, New Zealand.">
+  <meta property="og:image" content="images/retreat-exterior.jpg">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/components.css">
 </head>
 <body class="has-hero">
+  <!-- class="has-hero" disables the fixed-nav padding-top compensation in styles.css
+       since the full-screen video hero intentionally sits behind the transparent nav -->
+
   <div id="nav-placeholder"></div>
-  <main id="main-content"></main>
+
+  <main>
+
+    <!-- HERO: Cinematic video -->
+    <section class="hero">
+      <video class="hero__video" autoplay muted loop playsinline poster="images/retreat-exterior.jpg">
+        <source src="https://video.wixstatic.com/video/794854_7da545e460c04596ac7fbec87061f6f6/1080p/mp4/file.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <span class="overline" style="color:rgba(255,255,255,0.7)">Your escape in Hanmer Springs</span>
+        <h1>Vibrant Living<br>Retreat &amp; Day Spa</h1>
+        <div class="hero__actions">
+          <a href="book-online.html" class="btn btn--primary">Book Your Escape</a>
+          <a href="accommodation.html" class="btn btn--outline-light">Explore</a>
+        </div>
+      </div>
+      <div class="hero__scroll">↓ scroll</div>
+    </section>
+
+    <!-- S3: Feature Strip — Four pillars -->
+    <section class="section section--sage">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:48px;">
+          <span class="overline">Heart-centred wellness</span>
+          <h2>Your sanctuary awaits</h2>
+          <p>Two acres of tranquil gardens in Hanmer Springs. Chemical-free, plant-based, deeply personal.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <div class="feature-item__icon">🏡</div>
+            <h3>Accommodation</h3>
+            <p>Lodge suite, alpine villa, family villa, and campground — all with mountain views.</p>
+            <a href="accommodation.html" class="card__link" style="margin-top:8px;display:inline-block;">Explore stays</a>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon">✦</div>
+            <h3>Day Spa</h3>
+            <p>Therapeutic massages, holistic facials, healing sessions, and signature rituals.</p>
+            <a href="day-spa.html" class="card__link" style="margin-top:8px;display:inline-block;">View treatments</a>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon">🌿</div>
+            <h3>Wellness Retreats</h3>
+            <p>2 to 13-night immersive retreats with yoga, organic meals, and guided healing.</p>
+            <a href="retreats.html" class="card__link" style="margin-top:8px;display:inline-block;">View retreats</a>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon">🌱</div>
+            <h3>Eco &amp; Organic</h3>
+            <p>Chemical-free cleaning, composting, own chickens, local organic produce.</p>
+            <a href="about-us.html" class="card__link" style="margin-top:8px;display:inline-block;">Our values</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S2: Card Grid — Accommodation preview -->
+    <section class="section">
+      <div class="container">
+        <div class="s-cards__header">
+          <span class="overline">Stay with us</span>
+          <h2>Accommodation</h2>
+          <p>Choose your perfect retreat base — from intimate lodge suites to self-contained family villas.</p>
+        </div>
+        <div class="card-grid card-grid--4">
+          <div class="card">
+            <div class="card__image"><img src="images/team.jpg" alt="Lodge Suite interior with mountain views"></div>
+            <div class="card__body">
+              <span class="card__overline">From NZ$280/night</span>
+              <h3>Lodge Suite</h3>
+              <p>Private ensuite, infrared sauna, mountain views. In the main lodge.</p>
+              <a href="lodge-suite.html" class="card__link">View suite</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image"><img src="images/alpine-spa-villa.jpg" alt="Alpine Spa Villa exterior with hot tub"></div>
+            <div class="card__body">
+              <span class="card__overline">From NZ$280/night</span>
+              <h3>Alpine Spa Villa</h3>
+              <p>Standalone luxury villa, private outdoor hot tub, open-plan kitchen/lounge.</p>
+              <a href="alpine-spa-villa.html" class="card__link">View villa</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image"><img src="images/retreat-exterior.jpg" alt="Three bedroom villa exterior"></div>
+            <div class="card__body">
+              <span class="card__overline">Sleeps 2–8</span>
+              <h3>Three Bedroom Villa</h3>
+              <p>Fully self-contained. Large deck, BBQ, mountain views. Perfect for families.</p>
+              <a href="three-bedroom-villa.html" class="card__link">View villa</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image"><img src="images/campground.jpg" alt="Campground with garden setting"></div>
+            <div class="card__body">
+              <span class="card__overline">From NZ$30/night</span>
+              <h3>Campground</h3>
+              <p>Tent and campervan sites on the 2-acre property. Pet friendly.</p>
+              <a href="campground.html" class="card__link">View campground</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S1: Text + Image — Day Spa intro -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="s-text-image">
+          <div class="s-text-image__text">
+            <span class="overline">Day Spa</span>
+            <h2>Restore &amp; rejuvenate</h2>
+            <p>Our day spa offers a sanctuary of calm — therapeutic massages, organic facials, energy healing, and signature rituals crafted to nourish body, mind, and spirit.</p>
+            <p>Led by Adela — physiotherapist, massage therapist, yoga teacher, and retreat facilitator — every treatment is deeply personal and clinically informed.</p>
+            <a href="day-spa.html" class="btn btn--primary" style="margin-top:8px;">Explore the spa</a>
+          </div>
+          <div class="s-text-image__image" style="height:420px;">
+            <img src="images/aromatherapy.jpg" alt="Aromatherapy and hot stone massage at Vibrant Living Day Spa" style="height:100%;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S2: Card Grid — Retreats preview -->
+    <section class="section">
+      <div class="container">
+        <div class="s-cards__header">
+          <span class="overline">Immersive experiences</span>
+          <h2>Wellness Retreats</h2>
+          <p>Flexible 2–13 night retreats facilitated by Adela. Yoga, organic meals, healing sessions, and guided transformation in the heart of Hanmer Springs.</p>
+        </div>
+        <div class="card-grid card-grid--3">
+          <div class="card">
+            <div class="card__image"><img src="images/retreat-exterior.jpg" alt="Vibrant Living retreat grounds"></div>
+            <div class="card__body">
+              <span class="card__overline">Group &amp; Private</span>
+              <h3>Wellness Retreats</h3>
+              <p>2 to 13 nights. Yoga, meditation, organic meals, healing, and guided rest.</p>
+              <a href="retreats.html" class="card__link">View retreats</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image"><img src="images/alpine-renewal-room.jpg" alt="Alpine Renewal Ritual private suite"></div>
+            <div class="card__body">
+              <span class="card__overline">From NZ$699</span>
+              <h3>Alpine Renewal Ritual</h3>
+              <p>A 4–5 hour signature journey: exfoliation, infrared sauna, chocolate pralines, and deep relaxation.</p>
+              <a href="alpinerenewalritual.html" class="card__link">View ritual</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image"><img src="images/owners.jpg" alt="Vibrant Living owners Adela and partner"></div>
+            <div class="card__body">
+              <span class="card__overline">Bespoke</span>
+              <h3>Private Retreats</h3>
+              <p>A fully tailored retreat just for you — designed around your wellbeing goals.</p>
+              <a href="private-retreats.html" class="card__link">View private retreats</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specials Banner -->
+    <section class="section section--sage">
+      <div class="container text-center">
+        <span class="overline">March – May 2026</span>
+        <h2>Current specials</h2>
+        <div class="card-grid card-grid--2" style="max-width:800px;margin:0 auto;">
+          <div class="card" style="text-align:center;padding:32px;">
+            <h3>Midweek Massage Special</h3>
+            <p>60-minute massage for <strong style="color:var(--green);">NZ$135</strong> (regular NZ$169). Monday–Thursday only.</p>
+            <a href="book-online.html" class="btn btn--primary" style="margin-top:16px;">Book now</a>
+          </div>
+          <div class="card" style="text-align:center;padding:32px;">
+            <h3>Book 3 Nights, Get a Free Massage</h3>
+            <p>Stay 3 or more nights and receive a complimentary massage. Direct bookings only.</p>
+            <a href="book-online.html" class="btn btn--primary" style="margin-top:16px;">Book now</a>
+          </div>
+        </div>
+        <a href="specials.html" class="btn btn--outline" style="margin-top:32px;">View all specials</a>
+      </div>
+    </section>
+
+    <!-- S4: CTA Banner -->
+    <section class="section section--dark">
+      <div class="container s-cta-banner">
+        <span class="overline" style="color:var(--green);">Ready to escape?</span>
+        <h2>Begin your journey to vibrant wellbeing</h2>
+        <p>Book your stay, spa treatment, or wellness retreat in Hanmer Springs today.</p>
+        <a href="book-online.html" class="btn btn--primary">Book your escape</a>
+      </div>
+    </section>
+
+  </main>
+
   <div id="footer-placeholder"></div>
   <script src="js/partials.js"></script>
   <script src="js/main.js"></script>
