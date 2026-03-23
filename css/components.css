@@ -258,7 +258,7 @@
 .s-text-image--reversed { direction: rtl; }
 .s-text-image--reversed > * { direction: ltr; }
 .s-text-image__text { display: flex; flex-direction: column; gap: 16px; }
-.s-text-image__image { border-radius: 4px; overflow: hidden; }
+.s-text-image__image { border-radius: 4px; overflow: hidden; height: 400px; }
 .s-text-image__image img { width: 100%; height: 100%; object-fit: cover; }
 
 /* =====================
@@ -527,4 +527,39 @@
   .footer__grid { grid-template-columns: 1fr; }
   .pricing-grid--2 { grid-template-columns: 1fr; }
   .hero__actions { flex-direction: column; align-items: center; }
+}
+
+/* =====================
+   UTILITIES
+   ===================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+.checklist {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+.checklist li {
+  font-size: 14px;
+  color: var(--warm-grey);
+  padding-left: 16px;
+  position: relative;
+}
+.checklist li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--green);
 }
