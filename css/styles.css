@@ -1,0 +1,109 @@
+/* css/styles.css */
+
+/* Web fonts — must be first rule in file */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+/* =====================
+   CUSTOM PROPERTIES
+   ===================== */
+:root {
+  --green: #8BBF5A;
+  --warm-grey: #8A8782;
+  --bg-sage: #E3E0C0;
+  --white: #FFFFFF;
+  --near-black: #1A1A1A;
+  --warm-cream: #F5EEE6;
+  --muted-stone: #757575;
+  --light-grey: #E8E6E6;
+
+  --font-heading: 'Raleway', sans-serif;
+  --font-body: 'Avenir LT W01 35 Light', 'Avenir', 'Century Gothic', sans-serif;
+
+  --container-width: 1200px;
+  --section-padding: 80px;
+  --section-padding-mobile: 48px;
+  --gutter: 24px;
+  --card-gap: 32px;
+}
+
+/* =====================
+   RESET
+   ===================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--warm-grey);
+  background: var(--white);
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* =====================
+   TYPOGRAPHY
+   ===================== */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--near-black);
+}
+h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+h2 {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+h3 {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+p { margin-bottom: 16px; }
+p:last-child { margin-bottom: 0; }
+
+.overline {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--green);
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* =====================
+   LAYOUT UTILITIES
+   ===================== */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.section {
+  padding: var(--section-padding) 0;
+}
+.section--sage { background: var(--bg-sage); }
+.section--cream { background: var(--warm-cream); }
+.section--dark { background: var(--near-black); color: var(--white); }
+.section--dark h2, .section--dark h3 { color: var(--white); }
+
+.text-center { text-align: center; }
+.text-center h2, .text-center p { margin-left: auto; margin-right: auto; }
+.text-center p { max-width: 640px; }
+
+/* =====================
+   FIXED NAV COMPENSATION
+   ===================== */
+/* Nav is position:fixed — pages without a full-screen hero need top padding.
+   Add class="has-hero" to <body> on the homepage only. */
+body:not(.has-hero) { padding-top: 80px; }
+@media (max-width: 768px) { body:not(.has-hero) { padding-top: 64px; } }
