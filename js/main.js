@@ -18,16 +18,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // On non-home pages the nav should start scrolled (no video behind it)
-  if (!document.querySelector('.hero')) {
+  // Only run the scroll-based nav update on pages with a hero
+  if (document.querySelector('.hero')) {
+    updateNav(); // set initial state
+    window.addEventListener('scroll', updateNav, { passive: true });
+  } else {
+    // Non-hero pages: nav is always scrolled
     if (nav) {
-      nav.classList.add('nav--scrolled');
       nav.classList.remove('nav--transparent');
+      nav.classList.add('nav--scrolled');
     }
   }
-
-  window.addEventListener('scroll', updateNav, { passive: true });
-  updateNav();
 
   // Hamburger
   if (hamburger && mobileMenu) {

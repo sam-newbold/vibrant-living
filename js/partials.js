@@ -96,6 +96,10 @@
           <li><a href="/gift-vouchers.html">Gift Vouchers</a></li>
           <li><a href="/book-online.html">Book Online</a></li>
         </ul>
+        <div class="footer__social" style="margin-top: 16px;">
+          <a href="https://www.facebook.com/vibrantliving" aria-label="Facebook" class="footer__social-link">f</a>
+          <a href="https://www.instagram.com/vibrantliving" aria-label="Instagram" class="footer__social-link">&#9670;</a>
+        </div>
       </div>
     </div>
     <div class="footer__bottom">
