@@ -96,17 +96,13 @@
           <li><a href="/gift-vouchers.html">Gift Vouchers</a></li>
           <li><a href="/book-online.html">Book Online</a></li>
         </ul>
-        <div class="footer__social" style="margin-top: 16px;">
-          <a href="https://www.facebook.com/vibrantliving" aria-label="Facebook" class="footer__social-link">f</a>
-          <a href="https://www.instagram.com/vibrantliving" aria-label="Instagram" class="footer__social-link">&#9670;</a>
-        </div>
       </div>
     </div>
     <div class="footer__bottom">
       <p class="footer__copy">© ${new Date().getFullYear()} Vibrant Living Retreat and Day Spa. All rights reserved.</p>
       <div class="footer__social">
-        <a href="https://facebook.com" aria-label="Facebook">f</a>
-        <a href="https://instagram.com" aria-label="Instagram">&#9670;</a>
+        <a href="https://www.facebook.com/vibrantlivinghanmersprings" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/vibrantlivinghanmersprings" aria-label="Instagram">&#9670;</a>
       </div>
     </div>
   </div>

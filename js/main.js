@@ -43,4 +43,30 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = '';
     });
   }
+
+  // Close mobile menu on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('is-open')) {
+      mobileMenu.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Close mobile menu when clicking the overlay background
+  if (mobileMenu) {
+    mobileMenu.addEventListener('click', function(e) {
+      if (e.target === mobileMenu) {
+        mobileMenu.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // Reset mobile menu state when resizing above mobile breakpoint
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768 && mobileMenu && mobileMenu.classList.contains('is-open')) {
+      mobileMenu.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+  });
 });
