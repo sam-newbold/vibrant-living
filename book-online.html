@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Online — Vibrant Living Retreat &amp; Day Spa</title>
-  <meta name="description" content="Book your accommodation, day spa treatment, or wellness retreat at Vibrant Living Retreat and Day Spa in Hanmer Springs, New Zealand.">
+  <meta name="description" content="Book your accommodation or day spa treatment at Vibrant Living Retreat and Day Spa in Hanmer Springs. Instant online booking available.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/components.css">
 </head>
@@ -15,78 +15,144 @@
 
     <!-- Hero Banner -->
     <div class="hero-banner">
-      <div class="hero-banner__bg" style="background-image: url('images/hero-hot-stones.jpg');"></div>
+      <div class="hero-banner__bg" style="background-image: url('images/retreat-exterior.jpg');"></div>
       <div class="hero-banner__overlay"></div>
       <div class="hero-banner__content">
         <span class="overline" style="color:rgba(255,255,255,0.75);">Hanmer Springs, New Zealand</span>
         <h1>Book Online</h1>
+        <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="#accommodation" class="btn btn--primary">Book accommodation</a>
+          <a href="#spa" class="btn btn--outline-light">Book a spa treatment</a>
+        </div>
       </div>
     </div>
 
-    <!-- Booking Section -->
-    <section class="section">
-      <div class="container" style="text-align:center;">
-        <span class="overline">Secure your dates</span>
-        <h2>Book your experience</h2>
-        <p style="max-width:560px;margin:0 auto 40px;">Select your preferred accommodation, spa treatment, or retreat below. For multi-night retreat packages or bespoke enquiries, please <a href="contact.html" style="color:var(--green);">contact us directly</a>.</p>
-        <!-- Booking widget placeholder -->
-        <div style="background:var(--warm-cream);border-radius:4px;padding:48px;text-align:center;max-width:760px;margin:0 auto;">
-          <p style="color:var(--warm-grey);margin-bottom:24px;">Booking widget loads here — replace with Vibrant Living's external booking tool embed code.</p>
-          <a href="contact.html" class="btn btn--primary">Enquire directly</a>
+    <!-- Trust strip -->
+    <div class="trust-strip">
+      <div class="trust-strip__item"><span class="trust-strip__icon">✓</span><span>Instant confirmation</span></div>
+      <div class="trust-strip__item"><span class="trust-strip__icon">✓</span><span>Best rate direct booking</span></div>
+      <div class="trust-strip__item"><span class="trust-strip__icon">✓</span><span>Secure online payment</span></div>
+    </div>
+
+    <!-- Accommodation booking -->
+    <section class="section" id="accommodation">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:32px;">
+          <span class="overline">Accommodation</span>
+          <h2>Book your stay</h2>
+          <p style="max-width:560px;margin:0 auto;">Lodge Suite, Alpine Spa Villa, Three Bedroom Villa, and Campground. Select your dates below to check availability and book instantly.</p>
+        </div>
+        <div class="booking-iframe-wrap">
+          <iframe
+            src="https://bookings.littlehotelier.com/properties/vibrant-living/"
+            title="Book accommodation at Vibrant Living, Hanmer Springs"
+            width="100%"
+            height="700"
+            frameborder="0"
+            loading="lazy"
+            allowtransparency="true">
+          </iframe>
+          <!-- Replace src with your Little Hotelier property URL:
+               https://bookings.littlehotelier.com/properties/{your-property-slug}/ -->
+        </div>
+        <p style="text-align:center;margin-top:24px;font-size:14px;color:var(--warm-grey);">
+          Prefer to enquire about a longer stay or retreat? <a href="contact.html" style="color:var(--green);">Contact us directly</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Accommodation options -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:40px;">
+          <span class="overline">Our rooms</span>
+          <h2>Accommodation options</h2>
+        </div>
+        <div class="card-grid card-grid--4">
+
+          <div class="card">
+            <div class="card__image">
+              <img src="images/retreat-exterior.jpg" alt="Lodge Suite at Vibrant Living">
+            </div>
+            <div class="card__body">
+              <span class="card__overline">From NZ$280/night</span>
+              <h3>Lodge Suite B&amp;B</h3>
+              <p>Super-king bed, private ensuite, infrared sauna, mountain views. B&amp;B option available.</p>
+              <a href="lodge-suite.html" class="card__link">View room</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__image">
+              <img src="images/alpine-spa-villa.jpg" alt="Alpine Spa Villa at Vibrant Living">
+            </div>
+            <div class="card__body">
+              <span class="card__overline">From NZ$280/night</span>
+              <h3>Alpine Spa Villa</h3>
+              <p>Standalone luxury villa with private outdoor hot tub. Perfect for couples.</p>
+              <a href="alpine-spa-villa.html" class="card__link">View villa</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__image">
+              <img src="images/retreat-exterior.jpg" alt="Three Bedroom Villa at Vibrant Living">
+            </div>
+            <div class="card__body">
+              <span class="card__overline">Sleeps up to 8</span>
+              <h3>Three Bedroom Villa</h3>
+              <p>Fully self-contained villa for families and groups. Large deck, BBQ, full kitchen.</p>
+              <a href="three-bedroom-villa.html" class="card__link">View villa</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__image">
+              <img src="images/campground.jpg" alt="Campground at Vibrant Living">
+            </div>
+            <div class="card__body">
+              <span class="card__overline">From NZ$30/night</span>
+              <h3>Campground</h3>
+              <p>Tent and campervan sites on two acres. Hot shower, laundry, pet friendly.</p>
+              <a href="campground.html" class="card__link">View campground</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- What to expect -->
-    <section class="section section--sage">
+    <!-- Spa booking -->
+    <section class="section section--sage" id="spa">
       <div class="container">
-        <div style="text-align:center; margin-bottom:48px;">
-          <span class="overline">What's included</span>
-          <h2>Choose your experience</h2>
+        <div class="text-center" style="margin-bottom:32px;">
+          <span class="overline">Day Spa</span>
+          <h2>Book a spa treatment</h2>
+          <p style="max-width:560px;margin:0 auto;">Massages, facials, healing sessions, pampering packages, and more. Choose your treatment, date, and time below.</p>
         </div>
-        <div class="card-grid card-grid--3">
-          <div class="card">
-            <div class="card__image">
-              <img src="images/alpine-spa-villa.jpg" alt="Accommodation at Vibrant Living">
-            </div>
-            <div class="card__body">
-              <span class="card__overline">Stay</span>
-              <h3 class="card__title">Accommodation</h3>
-              <p>Lodge Suite, Alpine Spa Villa, Three Bedroom Villa, or Campground — from NZ$30/night.</p>
-              <a href="accommodation.html" class="card__link">Explore options</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image">
-              <img src="images/hero-hot-stones.jpg" alt="Day Spa treatments">
-            </div>
-            <div class="card__body">
-              <span class="card__overline">Rejuvenate</span>
-              <h3 class="card__title">Day Spa</h3>
-              <p>Massages, facials, body wraps, healing sessions, and signature half-day packages.</p>
-              <a href="day-spa.html" class="card__link">View treatments</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image">
-              <img src="images/retreat-exterior.jpg" alt="Wellness retreats">
-            </div>
-            <div class="card__body">
-              <span class="card__overline">Transform</span>
-              <h3 class="card__title">Wellness Retreats</h3>
-              <p>Flexible 2–13 night retreats facilitated by Adela. Group or private options available.</p>
-              <a href="retreats.html" class="card__link">Learn more</a>
-            </div>
-          </div>
+        <div class="booking-iframe-wrap">
+          <iframe
+            src="https://vibrantliving.gettimely.com/book"
+            title="Book a spa treatment at Vibrant Living Day Spa"
+            width="100%"
+            height="650"
+            frameborder="0"
+            loading="lazy"
+            allowtransparency="true">
+          </iframe>
+          <!-- Replace src with your Gettimely booking URL if needed -->
         </div>
+        <p style="text-align:center;margin-top:24px;font-size:14px;color:var(--warm-grey);">
+          Want to browse treatments first? <a href="day-spa.html" style="color:var(--green);">Explore the day spa</a>
+        </p>
       </div>
     </section>
 
     <!-- CTA Banner -->
     <section class="section section--dark s-cta-banner">
       <h2>Not sure what to book?</h2>
-      <p>Our team is happy to help you create the perfect Hanmer Springs escape. Get in touch and we'll tailor a package to suit you.</p>
-      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <p>Our team is happy to help you plan the perfect Hanmer Springs escape — whether that's a stay, a spa day, or both.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
         <a href="contact.html" class="btn btn--primary">Contact us</a>
         <a href="packages.html" class="btn btn--outline-light">View packages</a>
       </div>
