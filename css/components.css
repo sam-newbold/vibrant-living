@@ -92,14 +92,14 @@
 .nav__dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: var(--white);
   min-width: 200px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   border-radius: 2px;
-  padding: 8px 0;
+  padding: 12px 0 8px;
   z-index: 200;
 }
 .nav__dropdown:hover .nav__dropdown-menu,
