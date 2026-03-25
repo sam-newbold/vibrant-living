@@ -109,20 +109,7 @@
           <h2>Book Lodge Suite B&amp;B</h2>
           <p>Select your dates to check availability and book instantly.</p>
         </div>
-        <div class="booking-iframe-wrap">
-          <iframe
-            src="https://bookings.littlehotelier.com/properties/VibrantLivingRetreat&amp;DaySpaDirect/"
-            title="Book Lodge Suite B&B at Vibrant Living"
-            width="100%"
-            height="700"
-            frameborder="0"
-            loading="lazy"
-            allowtransparency="true">
-          </iframe>
-          <!-- Replace src with your Little Hotelier property URL:
-               https://bookings.littlehotelier.com/properties/{your-property-slug}/
-               Append ?room_type_id={id} to pre-select the Lodge Suite -->
-        </div>
+        <div id="lh-booking-widget-embed"></div>
         <p style="text-align:center;margin-top:24px;font-size:14px;color:var(--warm-grey);">
           Prefer to enquire? <a href="contact.html" style="color:var(--green);">Contact us directly</a>
         </p>
@@ -214,5 +201,12 @@
   <div id="footer-placeholder"></div>
   <script src="js/partials.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://widget.siteminder.com/ibe.min.js"></script>
+  <script>
+    LHBW.init({
+      channelCode: 'YOUR_CHANNEL_CODE',
+      container: '#lh-booking-widget-embed'
+    });
+  </script>
 </body>
 </html>
