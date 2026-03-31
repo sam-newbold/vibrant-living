@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Holistic Beauty — Vibrant Living Retreat &amp; Day Spa</title>
-  <meta name="description" content="Certified NZ organic beauty treatments including hydrating facials, body wraps, and full-body exfoliation. Holistic beauty that nourishes skin and spirit. Hanmer Springs.">
+  <title>Holistic Beauty Treatments — Vibrant Living Retreat &amp; Day Spa</title>
+  <meta name="description" content="Certified organic facials, sugar exfoliation, and body beauty treatments at Vibrant Living Day Spa, Hanmer Springs. From NZ$129.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/components.css">
 </head>
@@ -26,51 +26,81 @@
     <section class="section">
       <div class="container text-center">
         <span class="overline">Natural &amp; organic</span>
-        <h2>Beauty treatments that truly nourish</h2>
-        <p style="max-width:680px;margin:0 auto;">Our holistic beauty treatments use certified NZ organic products to cleanse, restore, and radiate. From hydrating facials to full-body exfoliation — each treatment is personalised to your skin and wellbeing needs.</p>
+        <h2>Beauty that nourishes from within</h2>
+        <p style="max-width:680px;margin:0 auto;">Adela's approach to beauty is holistic — treating the whole person, not just the surface. Every treatment uses certified NZ organic products, gentle plant-based ingredients, and techniques that nourish both skin and spirit. Leave glowing from the inside out.</p>
       </div>
     </section>
 
-    <!-- Text + Image block -->
+    <!-- Treatment cards -->
     <section class="section section--cream">
       <div class="container">
-        <div class="s-text-image">
-          <div class="s-text-image__text">
-            <span class="overline">Beauty treatments</span>
-            <h2>Pure, plant-based beauty</h2>
-            <p>Adela's approach to beauty is holistic — treating the whole person, not just the surface. Organic ingredients, gentle techniques, and a calming spa environment combine for results you can feel deeply.</p>
-            <ul class="checklist">
-              <li>&#10003; Holistic Hydrating Facial</li>
-              <li>&#10003; Vitality Facial with Eye Treatment</li>
-              <li>&#10003; Beauty Tofu Facial Ritual</li>
-              <li>&#10003; Detox and Glow Body Wraps</li>
-              <li>&#10003; Back &amp; Shoulder Massage &amp; Facial</li>
-              <li>&#10003; Organic Sugar Glow full-body exfoliation</li>
-            </ul>
+
+        <!-- Featured (always visible) -->
+        <div class="treatment-grid">
+
+          <div class="treatment-card treatment-card--featured">
+            <div class="treatment-card__badge">Special</div>
+            <div class="treatment-card__duration">1 hr 15 mins</div>
+            <div class="treatment-card__name">Gemstone Bliss Facial</div>
+            <div class="treatment-card__price">NZ$199</div>
+            <p class="treatment-card__desc">A luxurious facial elevated by hot and cold stone massage — opening circulation and leaving skin radiant.</p>
+            <a href="beauty-gemstone-facial.html" class="btn btn--primary">View treatment</a>
           </div>
-          <div class="s-text-image__image">
-            <img src="images/pregnancy-massage.jpg" alt="Holistic beauty treatment at Vibrant Living Day Spa">
+
+          <div class="treatment-card treatment-card--featured">
+            <div class="treatment-card__badge">Special</div>
+            <div class="treatment-card__duration">60 min</div>
+            <div class="treatment-card__name">Pure Vitality Facial Ritual &amp; Eye Restoration</div>
+            <div class="treatment-card__price">NZ$169</div>
+            <p class="treatment-card__desc">Deep cleansing, intensive hydration, and eye restoration using certified NZ organic products.</p>
+            <a href="beauty-vitality-facial.html" class="btn btn--primary">View treatment</a>
           </div>
+
+          <div class="treatment-card">
+            <div class="treatment-card__duration">60 min</div>
+            <div class="treatment-card__name">Body Beauty — Sugar Exfoliation &amp; Cacao Butter Massage</div>
+            <div class="treatment-card__price">NZ$179</div>
+            <p class="treatment-card__desc">Organic sugar scrub followed by cacao butter massage — skin left silky smooth and glowing.</p>
+            <a href="beauty-sugar-exfoliation.html" class="btn btn--primary">View treatment</a>
+          </div>
+
         </div>
+
+        <!-- Show more -->
+        <details class="treatment-more">
+          <summary class="btn btn--outline">View all 5 beauty treatments ↓</summary>
+          <div class="treatment-more__grid treatment-grid">
+
+            <div class="treatment-card">
+              <div class="treatment-card__duration">35 min</div>
+              <div class="treatment-card__name">Express Cleansing &amp; Hydrating Facial</div>
+              <div class="treatment-card__price">NZ$129</div>
+              <p class="treatment-card__desc">A beautifully efficient facial — deep cleansing, exfoliation, and intensive hydration in just 35 minutes. Ideal for a quick complexion refresh.</p>
+              <a href="beauty-express-facial.html" class="btn btn--primary">View treatment</a>
+            </div>
+
+            <div class="treatment-card">
+              <div class="treatment-card__duration">60 min</div>
+              <div class="treatment-card__name">Back, Neck &amp; Shoulder Massage &amp; Express Facial</div>
+              <div class="treatment-card__price">NZ$179</div>
+              <p class="treatment-card__desc">The perfect combination — a targeted back, neck and shoulder massage to release tension, followed by a 30-minute express cleansing facial. Twice the nourishment.</p>
+              <a href="beauty-back-facial-combo.html" class="btn btn--primary">View treatment</a>
+            </div>
+
+          </div>
+        </details>
+
       </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="section">
-      <div class="container text-center">
-        <span class="overline">Pricing</span>
-        <h2>Rates &amp; inclusions</h2>
-        <div class="pricing-card" style="max-width:400px;margin:40px auto 0;">
-          <div class="pricing-card__price" style="font-size:24px;">Contact us</div>
-          <div class="pricing-card__period">for current beauty treatment pricing</div>
-          <ul class="pricing-card__features" style="text-align:left;">
-            <li>Customised to your skin type</li>
-            <li>NZ organic products throughout</li>
-            <li>60–90 minute treatments</li>
-          </ul>
-          <a href="contact.html" class="btn btn--primary">Get in touch</a>
-        </div>
-        <p style="margin-top:16px;font-size:14px;"><a href="mailto:info@vibrantliving.co.nz">info@vibrantliving.co.nz</a> &nbsp;·&nbsp; <a href="tel:+6433157429">+64 3 315 7429</a></p>
+    <!-- Booking widget -->
+    <section class="booking-widget" id="book">
+      <span class="overline">Ready to book?</span>
+      <h2>Book your beauty treatment</h2>
+      <p>Use our online booking system to choose your treatment, date, and time. Secure your spot in minutes.</p>
+      <div class="booking-widget__embed">
+        <p>Booking widget — replace with Gettimely embed code for beauty treatments</p>
+        <a href="https://vibrantliving.gettimely.com" target="_blank" rel="noopener" class="btn btn--primary">Book online</a>
       </div>
     </section>
 
@@ -94,7 +124,7 @@
           </div>
 
           <div class="card">
-            <div class="card__image"><img src="images/aromatherapy.jpg" alt="Pampering package at Vibrant Living Day Spa"></div>
+            <div class="card__image"><img src="images/alpine-renewal-room.jpg" alt="Pampering package at Vibrant Living Day Spa"></div>
             <div class="card__body">
               <span class="card__overline">Spa packages</span>
               <h3>Pampering Packages</h3>
@@ -104,7 +134,7 @@
           </div>
 
           <div class="card">
-            <div class="card__image"><img src="images/alpine-renewal-room.jpg" alt="Alpine Renewal Ritual private suite at Vibrant Living"></div>
+            <div class="card__image"><img src="images/aromatherapy.jpg" alt="Alpine Renewal Ritual private suite at Vibrant Living"></div>
             <div class="card__body">
               <span class="card__overline">Signature 4–5 hrs</span>
               <h3>Alpine Renewal Ritual</h3>
@@ -121,8 +151,8 @@
     <section class="section section--dark">
       <div class="container s-cta-banner">
         <h2>Nourish your skin, restore your glow</h2>
-        <p>Nourish your skin and restore your glow with a holistic beauty treatment using certified NZ organic products.</p>
-        <a href="contact.html" class="btn btn--primary">Get in touch</a>
+        <p>Book a holistic beauty treatment using certified NZ organic products.</p>
+        <a href="https://vibrantliving.gettimely.com" target="_blank" rel="noopener" class="btn btn--primary">Book now</a>
       </div>
     </section>
 

@@ -19,6 +19,7 @@
       <div class="nav__dropdown">
         <a href="javascript:void(0)" class="nav__link" aria-haspopup="true">More ▾</a>
         <div class="nav__dropdown-menu">
+          <a href="/things-to-do-hanmer-springs.html">Things to Do</a>
           <a href="/yoga-hanmer-springs.html">Yoga</a>
           <a href="/fat-bikes.html">Fat Bikes</a>
           <a href="/venue-hire.html">Venue Hire</a>
@@ -41,6 +42,7 @@
   <a href="/retreats.html">Retreats</a>
   <a href="/packages.html">Packages</a>
   <a href="/specials.html">Specials</a>
+  <a href="/things-to-do-hanmer-springs.html">Things to Do</a>
   <a href="/yoga-hanmer-springs.html">Yoga</a>
   <a href="/fat-bikes.html">Fat Bikes</a>
   <a href="/venue-hire.html">Venue Hire</a>
@@ -95,6 +97,7 @@
           <li><a href="/about-us.html">About Us</a></li>
           <li><a href="/gift-vouchers.html">Gift Vouchers</a></li>
           <li><a href="/book-online.html">Book Online</a></li>
+          <li><a href="/things-to-do-hanmer-springs.html">Things to Do</a></li>
         </ul>
       </div>
     </div>
