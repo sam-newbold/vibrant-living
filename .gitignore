@@ -1,6 +1,3 @@
 .superpowers/
-images/*.mp4
-node_modules/
-.DS_Store
-# images/*.jpg are tracked intentionally — binary assets for the staging site
-.claude/
+
+
